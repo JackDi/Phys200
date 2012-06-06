@@ -1,0 +1,74 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf230
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 13.1\
+\
+import string\
+\
+\
+def file(y):\
+	h=dict()\
+	fp=open(y)\
+	for line in fp:\
+		change_line(line,h)\
+	return h\
+\
+\
+def change_line(line,h):\
+	line=line.replace('-','')\
+	for word in line.split():\
+		word=word.strip(string.punctuation +string.whitespace)\
+		word=word.lower()\
+		h[word]=h.get(word,0)+1\
+\
+13.2\
+\
+\
+'huckfin.txt'\
+\
+def total_words(h):\
+	return sum(h.values())\
+\
+\
+def different_words(h):\
+	return len(h)\
+\
+def word_words(h):\
+	print 'number of different words', total_words(h)\
+	print 'number of different fords', different_words(h)\
+\
+13.3\
+\
+def most_common(h):\
+	t=[]\
+	for key, value in h.items():\
+		t.append((value,key))\
+\
+t=most_common(hist)\
+for freq, word in t[0:20]:\
+	print word, '/t', freq\
+\
+\
+\
+\
+\
+13.4\
+\
+def subtract(d1,d2):\
+	res=dict()\
+	for key in d1:\
+		if key not in d2:\
+			res[key]=None\
+	return res\
+\
+\
+13.9\
+\
+\
+\
+\
+\
+}

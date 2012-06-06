@@ -1,0 +1,63 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf230
+{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\froman\fcharset0 Times-Roman;\f2\fswiss\fcharset0 Helvetica;
+}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa240
+
+\f0\fs24 \cf0 7.1
+\f1 \
+\pard\pardeftab720
+
+\f2 \cf0 def print_n(s,n):\
+	while n<=0:\
+		return\
+	print s\
+	print_n(s,n-1)\
+\
+7.2\
+\
+def square_root(n):\
+	x=n/2.0\
+	i=0\
+	while i<10:\
+		y=(x+n/x)/2\
+		x=y\
+		i=i+1\
+	print x\
+\
+\
+7.4\
+\
+\pard\pardeftab720\sa240
+\cf0 >>> eval('1 + 2 * 3')\uc0\u8232 7\u8232 >>> import math\u8232 >>> eval('math.sqrt(5)')\
+ 2.2360679774997898\
+>>> eval('type(math.pi)')\
+ <type 'float'>
+\f1 \
+\pard\pardeftab720
+
+\f2 \cf0 \
+\
+def eval_loop():\
+	while True:\
+		prompt= 'what do you want evaluated?\\n'\
+		y= raw_input(prompt)\
+		if y== 'done' :\
+			break\
+		else:\
+			x=eval(y)\
+			print x\
+		\
+	\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

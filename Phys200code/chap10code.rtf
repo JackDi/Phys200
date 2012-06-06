@@ -1,0 +1,59 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf230
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\froman\fcharset0 Times-Roman;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs26 \cf0 10.1
+\f1\fs24 \
+\pard\pardeftab720
+
+\f2 \cf2 def adding_list(x):\
+	y=[0]*len(x)\
+	i=0\
+	while i<=len(x)-1:\
+		if i==0:\
+			y[0]=x[0]\
+			i=i+1\
+		else:\
+			y[i]=y[i-1]+x[i]\
+			i=i+1
+\f0\fs26 \cf0 \
+\
+\
+\
+10.2\
+list=[1,2,3,4,5,6,7]\
+def chop(list):\
+	del list[0]\
+	del list[-1]\
+	return'none'\
+\
+def middle(list):\
+	del list[0]\
+	del list[-1]\
+	print list\
+\
+10.3\
+\
+def is_sorted(list):\
+	y=len(list)\
+	i=0\
+	while i<y:\
+		if list[i]>list[i+1]:\
+			print 'false'\
+			break\
+		elif list[i]<=list[i+1]:\
+			print 'true'\
+		i=i+1\
+\
+\
+10.4\
+\
+def is_anagram(list1,list2):\
+	if sorted(list1)==sorted(list2):\
+		print 'true'\
+	else:\
+		print'false'}

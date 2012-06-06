@@ -1,0 +1,120 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf230
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;\f2\fswiss\fcharset0 ArialMT;
+\f3\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 8.1\
+def backwards(word):\
+	index=-1\
+	while index<len(word):\
+		letter=word[index]\
+		print letter\
+		index=index-1\
+\
+8.2
+\f1 \
+
+\f0 def print_duck():\
+	prefixes= 'jklmnpoq'\
+	suffix= 'ack'\
+	second_suffix= 'uack'\
+	for letter in prefixes[0:6]:\
+		print letter+suffix\
+	for letter in prefixes[6:9]:\
+		print letter+second_suffix\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 \
+\
+\
+\pard\pardeftab720\sa240
+
+\f1\b0 \cf0 \
+\
+\pard\pardeftab720
+
+\f2\fs26 \cf0 8.4\
+\pard\pardeftab720\sa240
+
+\f3\fs24 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\b \cf0 def find(word, letter,n):\
+	index=n\
+	while index< len(word):\
+		if word[index]==letter:\
+			return index\
+		index=index+1\
+	return -1\
+\
+\
+\pard\pardeftab720
+
+\f2\b0\fs26 \cf0 \
+ \
+8.5 \
+\pard\pardeftab720\sa240
+
+\f1 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 \
+def count(word,counting):\
+	count=0\
+	for letter in word:\
+		if letter==counting:\
+			count=count+1\
+	return count\
+	
+\f1 \
+\pard\pardeftab720
+
+\f2\fs26 \cf0 \
+8.6 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\b\fs24 \cf0 def find(word, letter,n):\
+	while n< len(word):\
+		if word[n]==letter:\
+			return n\
+		n=n+1\
+	return -1\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f1\b0\fs26 \cf0 \
+
+\f0\fs24 def count(word,letter):\
+	count=0\
+	n=0\
+	while n<len(word):\
+		if find(word,letter,n) !=-1:\
+			count=count+1\
+		n= find(word,letter,n)+1\
+	return count\
+
+\f1\fs26 \
+\pard\pardeftab720\sa240
+
+\fs24 \cf0 \
+\
+\pard\pardeftab720
+
+\f2\fs26 \cf0 \
+8.9\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\b\fs24 \cf0 def is_palindrome(word):\
+	if word[::-1]==word[::1]:\
+		print 'its a palindrome'\
+	else:\
+		print 'not a palindrome'
+\f2\b0\fs26 \
+\pard\pardeftab720
+\cf0 \
+}
